@@ -241,8 +241,8 @@ if dados is not None:
 
     #Valor total gerado
     with col4:
-        valor_total_gerado = df_filtrado['comissao_gerada'].sum()  # Usando o dataframe filtrado
-        valor_formatado = locale.currency(valor_total_gerado, grouping=True)  # Formatação de moeda brasileira
+        valor_total_gerado = df_filtrado['comissao_gerada'].sum()
+        valor_formatado = f"R$ {valor_total_gerado:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")  # Formatação BR
         st.markdown(f'<div class="kpi-container"><div class="kpi-title">Valor Total Gerado</div><div class="kpi-value">{valor_formatado}</div></div>', unsafe_allow_html=True)
 
 
