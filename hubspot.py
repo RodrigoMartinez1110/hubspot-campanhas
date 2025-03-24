@@ -3,7 +3,12 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import locale
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+
+try:
+    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+except locale.Error:
+    locale.setlocale(locale.LC_ALL, 'C.UTF-8')  # Alternativa compatível
+
 st.set_page_config(layout="wide")
 
 st.title('Analisar Geração de Leads')
