@@ -325,6 +325,7 @@ if dados:
             graf1.update_layout(
                 title='1. Leads Gerados por Convênio',
                 xaxis_title='Quantidade',
+                font=dict(size=16),
                 yaxis_title='Convênio',
                 legend_title='Produto',
                 xaxis_tickfont_size=12,
