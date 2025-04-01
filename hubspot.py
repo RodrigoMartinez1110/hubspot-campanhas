@@ -159,6 +159,7 @@ if dados:
     df_filtrado = df_filtrado.loc[df_filtrado['vendedor'].isin(vendedor)]
     df_filtrado = df_filtrado.loc[df_filtrado['produto'].isin(produto)]
     df_filtrado = df_filtrado.loc[df_filtrado['convenio_acronimo'].isin(convenio)]
+    df_filtrado = df_filtrado.loc[df_filtrado['etapa'].isin(etapa)]
     df_filtrado = df_filtrado.loc[df_filtrado['origem'].isin(origem)]
 
 
