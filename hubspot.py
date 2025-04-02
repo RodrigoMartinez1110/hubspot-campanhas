@@ -508,7 +508,6 @@ if dados:
                 yaxis_title='Quantidade',
                 legend_orientation='h',
                 legend_y=1.0,
-                textfont=dict(size=20),
                 xaxis_tickfont_size=12,
                 height=450,
                 width=1250,
